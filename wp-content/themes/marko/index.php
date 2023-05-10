@@ -57,13 +57,13 @@ get_header(); ?>
                     <div class="featured-content">
 						<div class="featured-thumbnail">
 						<?php 
-							if ( has_post_thumbnail() ) { ?>
-								<img class="img-fluid" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'full' ); ?>" alt="<?php echo get_the_title();?>" loading="lazy">
-							<?php }
-							else { ?>
-								<img class="img-fluid" src="<?php echo home_url('/wp-content/uploads/2023/04/no-image.jpg');?>" alt="<?php echo get_the_title();?>" loading="lazy">
-							<?php }
-							?>
+                        if ( has_post_thumbnail() ) { ?>
+                            <img class="img-fluid" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'full' ); ?>" alt="<?php echo get_the_title();?>" loading="lazy">
+                        <?php }
+                        else { ?>
+                            <img class="img-fluid" src="<?php echo home_url('/wp-content/uploads/2023/04/no-image.jpg');?>" alt="<?php echo get_the_title();?>" loading="lazy">
+                        <?php }
+                        ?>
 						</div>
                         <div class="featured-title">
                             <h3>
